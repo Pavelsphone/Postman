@@ -5,14 +5,6 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>contact-manager</artifactId>
-    <version>1.0.0</version>
-    <packaging>jar</packaging>
-
-    <name>Contact Manager</name>
-    <description>Contact management application</description>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -20,16 +12,26 @@
         <relativePath/>
     </parent>
 
+    <groupId>com.example</groupId>
+    <artifactId>contact-manager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>contact-manager</name>
+    <description>Contact Manager Project</description>
+
     <properties>
         <java.version>21</java.version>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -38,6 +40,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.contactmanager.ContactManagerApplication</mainClass>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -51,6 +56,5 @@
         </plugins>
     </build>
 </project>
-
 
 

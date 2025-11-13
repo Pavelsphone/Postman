@@ -1,13 +1,14 @@
-package com.example.untitled;
+package com.example.contactmanager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Untitled48ApplicationTests {
+class ContactManagerApplicationTests {
 
     @Test
     void contextLoads() {
     }
 
 }
+
